@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"name": "FoodLocations",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 1, "id": 1, "Name": "Haloa Cafe Hatfield", "Wifi": true, "Power": true, "OutSeat": true }, "geometry": { "type": "Point", "coordinates": [ 28.228709042882681, -25.753250944960278 ] } },
+{ "type": "Feature", "properties": { "fid": 2, "id": 2, "Name": "Artisan Coffee", "Wifi": true, "Power": true, "OutSeat": true }, "geometry": { "type": "Point", "coordinates": [ 28.229047117746948, -25.754042782595519 ] } },
+{ "type": "Feature", "properties": { "fid": 3, "id": 3, "Name": "Pure Cafe", "Wifi": true, "Power": true, "OutSeat": true }, "geometry": { "type": "Point", "coordinates": [ 28.229261175198697, -25.754240167386911 ] } },
+{ "type": "Feature", "properties": { "fid": 4, "id": 4, "Name": "Sausage Saloon", "Wifi": true, "Power": false, "OutSeat": false }, "geometry": { "type": "Point", "coordinates": [ 28.228833909729534, -25.755476492571233 ] } },
+{ "type": "Feature", "properties": { "fid": 5, "id": 5, "Name": "Piazza", "Wifi": true, "Power": true, "OutSeat": true }, "geometry": { "type": "Point", "coordinates": [ 28.231860444255631, -25.754236342103365 ] } },
+{ "type": "Feature", "properties": { "fid": 6, "id": 6, "Name": "Monastery", "Wifi": true, "Power": true, "OutSeat": true }, "geometry": { "type": "Point", "coordinates": [ 28.233195755026056, -25.754468919118469 ] } },
+{ "type": "Feature", "properties": { "fid": 7, "id": 7, "Name": "Adlers Cafe", "Wifi": true, "Power": true, "OutSeat": true }, "geometry": { "type": "Point", "coordinates": [ 28.234359480061361, -25.755509389662098 ] } },
+{ "type": "Feature", "properties": { "fid": 8, "id": 8, "Name": "10'z", "Wifi": true, "Power": true, "OutSeat": true }, "geometry": { "type": "Point", "coordinates": [ 28.234512378241178, -25.755842950347905 ] } },
+{ "type": "Feature", "properties": { "fid": 9, "id": 9, "Name": "Vida e Cafe", "Wifi": true, "Power": false, "OutSeat": true }, "geometry": { "type": "Point", "coordinates": [ 28.234165809033584, -25.755700651637817 ] } },
+{ "type": "Feature", "properties": { "fid": 10, "id": 10, "Name": "Steers", "Wifi": true, "Power": false, "OutSeat": true }, "geometry": { "type": "Point", "coordinates": [ 28.228598616419497, -25.753619704786331 ] } }
+]
+}

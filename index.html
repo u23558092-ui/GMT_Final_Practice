@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2D Campus Spatial Dashboard</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <nav class="navbar navbar-dark bg-dark px-3">
+    <span class="navbar-brand mb-0 h1"> Campus Interactive Map Dashboard</span>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container-fluid dashboard-container">
+    <div class="row h-100">
+      
+      <!-- Left Sidebar Controls -->
+<div class="col-md-3 bg-light p-3 border-end sidebar">
+  <h5>Layer Visibility</h5>
+  <hr>
+  
+  <!-- Layer Toggles -->
+  <div class="form-check form-switch mb-2">
+    <input class="form-check-input" type="checkbox" id="toggleBenches" checked>
+    <label class="form-check-label" for="toggleBenches">Benches</label>
+  </div>
+  <div class="form-check form-switch mb-2">
+    <input class="form-check-input" type="checkbox" id="toggleChairTables" checked>
+    <label class="form-check-label" for="toggleChairTables">Chair Tables</label>
+  </div>
+  <div class="form-check form-switch mb-2">
+    <input class="form-check-input" type="checkbox" id="toggleGrass" checked>
+    <label class="form-check-label" for="toggleGrass">Grass Seating</label>
+  </div>
+  <div class="form-check form-switch mb-2">
+    <input class="form-check-input" type="checkbox" id="toggleInformal" checked>
+    <label class="form-check-label" for="toggleInformal">Informal Seating</label>
+  </div>
+  <div class="form-check form-switch mb-2">
+    <input class="form-check-input" type="checkbox" id="toggleFood" checked>
+    <label class="form-check-label" for="toggleFood">Food Venues</label>
+  </div>
+  <div class="form-check form-switch mb-3">
+    <input class="form-check-input" type="checkbox" id="toggleLectures" checked>
+    <label class="form-check-label" for="toggleLectures">Lecture Venues</label>
+  </div>
+
+  
+
+  <!-- Dashboard Statistics Card -->
+  <div class="card bg-white mt-4 shadow-sm">
+    <div class="card-header bg-primary text-white font-weight-bold">Summary Metrics</div>
+    <div class="card-body">
+      <p class="card-text mb-1">Benches: <strong id="benchCount">0</strong></p>
+      <p class="card-text mb-1">Chair Tables: <strong id="chairCount">0</strong></p>
+      <p class="card-text mb-1">Grass Seating: <strong id="grassCount">0</strong></p>
+      <p class="card-text mb-1">Informal Seating: <strong id="informalCount">0</strong></p>
+      <p class="card-text mb-1">Food Locations: <strong id="foodCount">0</strong></p>
+      <p class="card-text mb-0">Lecture Venues: <strong id="lectureCount">0</strong></p>
+    </div>
+  </div>
+</div>
+
+      <!-- Right Map Viewport -->
+      <div class="col-md-9 p-0">
+        <div id="map"></div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Leaflet JS Library -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Custom Application Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>
